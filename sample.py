@@ -42,4 +42,6 @@ total = sum_of_list(numbers)
 
 # Pulled and made some chan
 
+#Idha kadupudi da paapom
+
 print(f"{user_full_name} the sum of {numbers} is {total}")
