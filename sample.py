@@ -40,8 +40,6 @@ show_numbers()
 numbers = [1,2,3,4,5]
 total = sum_of_list(numbers)
 
-# Pulled and made some chan
-
-#Idha kadupudi da paapom
+#Now its clean
 
 print(f"{user_full_name} the sum of {numbers} is {total}")
