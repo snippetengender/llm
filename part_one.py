@@ -1,5 +1,3 @@
-# Basic DSA operations on a list (array)
-
 def show_menu():
     print("\nChoose an operation:")
     print("1. Insert an element")
@@ -9,12 +7,12 @@ def show_menu():
     print("5. Display array")
     print("6. Exit")
 
-
-arr = []  # our array
+arr = []
 
 while True:
     show_menu()
-    choice = int(input("Enter choice: "))
+    print(arr)
+    choice = int(input("Enter your choice (1-6): "))
 
     if choice == 1:
         value = int(input("Enter value to insert: "))
@@ -27,19 +25,19 @@ while True:
             arr.remove(value)
             print("Deleted!")
         else:
-            print("Value not found.")
-
+            print("Element not found!")
+    
     elif choice == 3:
         value = int(input("Enter value to search: "))
         found = False
         for i in range(len(arr)):
             if arr[i] == value:
-                print(f"Found at index {i}")
+                print(f"Element found at index {i}")
                 found = True
                 break
         if not found:
-            print("Not found.")
-
+            print("Element not found!")
+    
     elif choice == 4:
         index = int(input("Enter index to update: "))
         if 0 <= index < len(arr):
@@ -47,14 +45,9 @@ while True:
             arr[index] = new_value
             print("Updated!")
         else:
-            print("Invalid index.")
-
+            print("Index out of range!")
     elif choice == 5:
         print("Current array:", arr)
-
     elif choice == 6:
-        print("Exiting program...")
+        print("Exiting...")
         break
-
-    else:
-        print("Invalid option.")
